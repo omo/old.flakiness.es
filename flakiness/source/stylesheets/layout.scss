@@ -56,11 +56,6 @@ h1#title {
 
 aside {
   @include bread;
-  padding: $body-child-padding;
-
-  border-style: dotted;
-  border-width: 1pt 0pt 0pt 0pt;
-  border-color: $bread-bg-color;
 
   * {
     margin: 0px;
@@ -74,6 +69,15 @@ aside {
     padding: 0em 0.5em 0em 0em;
   }
 
+  .aside-item-profile {
+    a {
+      color: inherit;
+    }
+
+    @extend .aside-item;
+    display: block;
+  }
+
   h2 {
     font-size: $aside-font-size;
     font-weight: bold;
@@ -85,6 +89,12 @@ aside {
     font-weight: 400;
     display: inline;
   }
+
+  padding: $body-child-padding;
+
+  border-style: dotted;
+  border-width: 1pt 0pt 0pt 0pt;
+  border-color: $bread-bg-color;
 }
 
 .article {
@@ -119,11 +129,8 @@ aside {
 }
 
 .category {
+  @include body-child;
   font-family: $text-font;
-
-  h1 {
-    @include body-child;
-  }
 
   ul {
     display: block;
