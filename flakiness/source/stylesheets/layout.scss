@@ -17,6 +17,7 @@ $body-child-padding: 12pt;
 $article-bottom-padding: 36pt;
 $bread-bg-color: #999;
 $bread-fg-color: white;
+$title-image: url(/images/title-bg.png);
 
 a {
   text-decoration: none;
@@ -45,10 +46,11 @@ h1#title {
   font-family: $title-font;
   font-weight: bold;
   background-color: $bread-bg-color;
+  background-image: $title-image;
   color: $bread-fg-color;
-  @include border-radius(0pt 0pt 3pt 3pt);
+  @include border-radius(0pt 0pt 2pt 2pt);
   a {
-    color: white;
+    color: inherit;
   }
 }
 
@@ -106,11 +108,9 @@ aside {
 
   .article-date {
     font-size: $date-font-size;
-    padding: 2pt;
+    padding-left: 4pt;
     font-weight: normal;
     color: #666;
-    margin-bottom: 0.5em;
-    background-color: #eee;
   }
 
   p {
