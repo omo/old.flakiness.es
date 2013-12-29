@@ -1,0 +1,142 @@
+
+@import "compass/css3";
+@import "flexbox";
+
+$header-font-size: 18pt;
+$title-font-size: 24pt;
+$date-font-size: 12pt;
+$text-font-size: 14pt;
+$aside-font-size: 10pt;
+
+$text-font: 'Merriweather', serif;
+$aside-font: 'Open Sans', sans-serif;
+$title-font: 'Open Sans', sans-serif;
+
+$link-color: #44a;
+$body-child-padding: 12pt;
+$article-bottom-padding: 36pt;
+$bread-bg-color: #999;
+$bread-fg-color: white;
+
+a {
+  text-decoration: none;
+  color: $link-color;
+}
+
+@mixin body-child {
+  padding-left: $body-child-padding;
+  padding-right: $body-child-padding;
+}
+
+@mixin bread {
+  @include body-child;
+}
+
+html {
+  background-color: white;
+  padding: 0em 0em 0em 0em;
+}
+
+h1#title {
+  @include bread;
+  padding: $body-child-padding;
+  margin: 0px;
+  font-size: $header-font-size;
+  font-family: $title-font;
+  font-weight: bold;
+  background-color: $bread-bg-color;
+  color: $bread-fg-color;
+  @include border-radius(0pt 0pt 3pt 3pt);
+  a {
+    color: white;
+  }
+}
+
+aside {
+  @include bread;
+  padding: $body-child-padding;
+
+  border-style: dotted;
+  border-width: 1pt 0pt 0pt 0pt;
+  border-color: $bread-bg-color;
+
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  font-family: $aside-font;
+
+  .aside-item {
+    display: inline;
+    padding: 0em 0.5em 0em 0em;
+  }
+
+  h2 {
+    font-size: $aside-font-size;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  ol, li {
+    font-size: $aside-font-size;
+    font-weight: 400;
+    display: inline;
+  }
+}
+
+.article {
+  @include body-child;
+  padding-bottom: $article-bottom-padding;
+
+  font-family: $text-font;
+  
+  h2 {
+    font-size: $title-font-size;
+    font-weight: bold;
+
+    a {
+      color: inherit;
+    }
+
+    a:hover {
+       text-decoration: underline;
+    }
+  }
+
+  .article-date {
+    font-size: $date-font-size;
+    padding: 2pt;
+    font-weight: normal;
+    color: #666;
+    margin-bottom: 0.5em;
+    background-color: #eee;
+  }
+
+  p {
+    font-size: $text-font-size;
+  }
+}
+
+.category {
+  font-family: $text-font;
+
+  h1 {
+    @include body-child;
+  }
+
+  ul {
+    display: block;
+  }
+
+  li {
+    display: block;
+  }
+}
+
+body {
+  max-width: 840px;
+  position: relative;
+  margin: 0px auto;
+  padding: 0px;
+}
