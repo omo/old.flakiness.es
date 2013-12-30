@@ -1,5 +1,6 @@
 
 @import "compass/css3";
+@import "compass/css3/filter";
 @import "flexbox";
 
 $header-font-size: 18pt;
@@ -14,7 +15,6 @@ $title-font: 'Open Sans', sans-serif;
 
 $link-color: #44a;
 $body-child-padding: 12pt;
-$article-bottom-padding: 36pt;
 $bread-bg-color: #999;
 $bread-fg-color: white;
 $title-image: url(/images/title-bg.png);
@@ -45,6 +45,7 @@ h1#title {
   font-size: $header-font-size;
   font-family: $title-font;
   font-weight: bold;
+  letter-spacing: 1pt;
   background-color: $bread-bg-color;
   background-image: $title-image;
   color: $bread-fg-color;
@@ -99,7 +100,6 @@ aside {
 
 .article {
   @include body-child;
-  padding-bottom: $article-bottom-padding;
 
   font-family: $text-font;
   
@@ -125,6 +125,14 @@ aside {
 
   p {
     font-size: $text-font-size;
+  }
+}
+
+.social-buttons {
+  @include filter(grayscale(100%));
+  margin: 2em 0em 1em 0em;
+  &:hover {
+    @include filter(none);
   }
 }
 
