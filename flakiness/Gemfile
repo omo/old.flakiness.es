@@ -7,6 +7,8 @@ gem "middleman-blog", "~> 3.5.1"
 
 # https://github.com/timhettler/compass-flexbox
 gem "compass-flexbox"
+# https://github.com/fredjean/middleman-s3_sync
+gem 'middleman-s3_sync'
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"

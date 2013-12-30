@@ -32,6 +32,9 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+# This should be ignored as it's just a layout template.
+ignore "article.erb"
+
 page "/feed.xml", layout: false
 
 ###
@@ -103,4 +106,9 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+# https://github.com/fredjean/middleman-s3_sync
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket = 'flakiness.es'
 end
