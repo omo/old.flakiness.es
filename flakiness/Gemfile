@@ -4,6 +4,9 @@ source 'http://rubygems.org'
 
 gem "middleman", "~> 3.2.1"
 gem "middleman-blog", "~> 3.5.1"
+# https://github.com/middleman/middleman-syntax
+gem "middleman-syntax"
+gem "redcarpet"
 
 # https://github.com/timhettler/compass-flexbox
 gem "compass-flexbox"

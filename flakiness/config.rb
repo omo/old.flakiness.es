@@ -112,3 +112,8 @@ end
 activate :s3_sync do |s3_sync|
   s3_sync.bucket = 'flakiness.es'
 end
+
+# https://github.com/middleman/middleman-syntax
+activate :syntax
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
