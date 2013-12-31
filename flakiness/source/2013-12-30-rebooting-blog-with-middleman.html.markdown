@@ -1,15 +1,15 @@
 ---
 title: Rebooting Blog with Middleman
 date: 2013-12-30 14:17 UTC
-tags:
+tags: ['tech']
 ---
 
 OK, it seems working.
 
-I used to blog in Japanese but recently decided to go with English so that my non-Japanese friends can read my writing. Actually there is little drawback to do that as most of my Japanese friends can read English.
+I used to blog in Japanese but recently decided to go with English so that my non-Japanese friends can read my writing. Actually there is little drawback to do that as most of my Japanese friends can read English as well.
 
 At first I thought I can continue using [Octopress](http://octopress.org/) as my blogging tool.
-Then I heard [Middleman](http://middlemanapp.com/) could be better. So let's give it a try. 
+Then I heard [Middleman](http://middlemanapp.com/) could be better. So I'm giving it a try. 
 My first impression: This is better, maybe?
 
 Some points here.
