@@ -94,8 +94,9 @@ aside {
     display: inline;
   }
 
-  .article-link:before {
+  li.text-link:before {
     content: "\226B";
+    padding-right: 0.2em;
   }
 
   padding: $body-child-padding;
@@ -105,11 +106,49 @@ aside {
   border-color: $bread-bg-color;
 }
 
-.article {
+.index {
   @include body-child;
+  padding-top: 1em;
 
   font-family: $text-font;
+
+  h2 {
+    font-size: $text-font-size;
+  }
+
+  ul {
+    padding: 0px;
+  }
+
+  li {
+    display: block;
+    padding-bottom: 0.5em;
+  }
+}
+
+.article-list {
+  .article-title {
+    padding-right: 0.5em;
+  }
+
+  .article-date {
+    color: #666;
+    @media screen and (max-width: $break-small) {
+      display: block;
+    }
+  }
+}
+
+.article {
+  @include body-child;
+  font-family: $text-font;
   
+  em {
+    //font-weight: bold;
+    font-style: normal;
+    text-decoration: underline;
+  }
+
   h1 {
     font-size: $h1-font-size;
     font-weight: bold;
@@ -178,3 +217,4 @@ body {
   margin: 0px auto;
   padding: 0px;
 }
+

@@ -12,7 +12,7 @@ At first I thought I can continue using [Octopress](http://octopress.org/) as my
 Then I heard [Middleman](http://middlemanapp.com/) could be better. So I'm giving it a try. 
 My first impression: This is better, maybe?
 
-Some points here.
+Some points follow.
 
 ## Pros (1): Active development
 
@@ -20,7 +20,7 @@ Middleman is [under active development](https://github.com/middleman/middleman/c
 This kind of vitality is a signal of good project. 
 
 It isn't fair to say that Octopress is an inactive project when you see its [commit rate](https://github.com/imathis/octopress/commits/master),
-but its release cycle is barely predictable and it's even hard to understand the versioning.
+but its release cycle is barely predictable and it's even harder to understand the versioning.
 
 See there is a branch called [3.0-stable](https://github.com/middleman/middleman/commits/3.0-stable) but
 its last commit happened more than half a year ago and current master stays on 2.x or something. Pretty confusing.
@@ -35,9 +35,9 @@ Although I haven't taken deeper look, the architecture of Middleman looks more f
 One strong signal of the modularity is [existing set of extensions](https://github.com/middleman). There are not only "official" extensions
 hosted under [github.com/middleman](https://github.com/middleman), but are also unofficial, third-party extensions like 
 [middleman-s3_sync](https://github.com/fredjean/middleman-s3_sync) which I'm using.
-This implies that Middleman's extensibility. I don't see same level of ecosystem around Octopress nor Jekyll.
+This implies Middleman's extensibility. I don't see same level of ecosystem around Octopress nor Jekyll.
 
-I can't explain the reasoning of this difference clearly. However it seems like Middleman is modeled after Ruby web frameworks like Rails and [Rack](https://github.com/rack/rack) - 
+I don't have clear explanation of this difference. I vaguely feel that Middleman is modeled after Ruby web frameworks like Rails and [Rack](https://github.com/rack/rack) - 
 Its [config.rb](http://middlemanapp.com/advanced/configuration/) has a block-driven DSL that resembles style of these frameworks. Probably this kind of design philosophy helps here.
 
 ## Pros (3): Generate not Fork
@@ -81,8 +81,8 @@ So here is a bottom-line:
 Octopress has rich built-in design and features but is weak on extensibility.
 Middleman provides no visual and is bare-bone in terms of the default feature set but it is extensible and has many extensions. You can choose whichever you want.
 
-Personally speaking, I like both. Octopress told me the beauty of static site generator as a easy-starter.
-It's time to go beyond that though - With Middleman, I can now pick only what I want, that is bare minimum and thus doable.
+I like both. Octopress told me the beauty of static site generator as a easy-starter.
+It's time to go beyond that though - With Middleman, I can stay lean, accepting only what I want, that is bare minimum and thus doable.
 
 Anyway.
 

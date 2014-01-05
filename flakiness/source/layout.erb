@@ -5,6 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <meta name="viewport" content="width=device-width">
     <title>Flakiness-es<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <link rel="icon" href="/favicon.png" type="image/png">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,900|Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="/syntax.css" rel="stylesheet">
@@ -41,19 +42,10 @@
       </div>
 
       <div class="aside-item">
-      <h2>Recent Articles</h2>
-      <ol>
-        <% blog.articles[0...10].each_with_index do |article, i| %>
-          <li><span class="article-link"><%= link_to article.title, article %></span></li>
-        <% end %>
-      </ol>
-      </div>
-
-      <div class="aside-item">
       <h2>Tags</h2>
       <ol>
         <% blog.tags.each do |tag, articles| %>
-          <li><%= link_to tag, tag_path(tag) %> (<%= articles.size %>)</a></li>
+          <li class="text-link"><%= link_to tag, tag_path(tag) %></a></li>
         <% end %>
       </ol>
       </div>
@@ -62,18 +54,10 @@
       <h2>By Year</h2>
       <ol>
         <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-          <li><%= link_to year, blog_year_path(year) %> (<%= articles.size %>)</a></li>
+          <li class="text-link"><%= link_to year, blog_year_path(year) %></a></li>
         <% end %>
       </ol>
       </div>
-
-      <div class="aside-item">
-      <h2>Meta</h2>
-      <ol>
-        <li><a href="/about.html">About Me</a></li>
-      </ol>
-      </div>
-
     </aside>
 
 <!-- Another social button scdripts  -->
