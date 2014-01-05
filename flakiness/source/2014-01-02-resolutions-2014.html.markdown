@@ -4,12 +4,12 @@ date: 2014-01-02 03:48 UTC
 tags: life
 ---
 
-I'm figuring out my 2014 resolutions.
+I'm figuring out my 2014 resolutions. There is a couple of it.
 
 First one is to *write this blog at least once a month*, once a week as a stretch goal.
 Writing will help me to do other things: It makes what I did (and thought) public, forces me to beware my own behavior so that I have something to write regularly.
 
-Another is to *have [30 day challenges](http://www.ted.com/talks/matt_cutts_try_something_new_for_30_days.html) for every month*. As a stretch, have "books of the month" as well. I have long list of technologies to learn, bulk of projects to start and stack of books to read. I didn't do any of them though, and just had spent days. I feel bad about that but I don't want to recklessly commit one of them without having confidence with the idea. Instead, I want to try each and see if it fits. Having 30-day challenges will support such a small-start, experimental-minded execution.
+Another is to *have [30 day challenges](http://www.ted.com/talks/matt_cutts_try_something_new_for_30_days.html) for every month*. As a stretch, have "books of the month" as well. I have long list of technologies to learn, bulk of projects to start and a stack of books to read. I didn't do any of them though, and just had spent days. I feel bad about that but I don't want to recklessly commit one of them without having confidence with the idea. Instead, I want to try each and see if it fits. Having 30-day challenges will support such a small-start, experimental-minded execution.
 
 Hopefully these two resolutions will complement each other. I can do a challenge and write about it. I can write about my interest then try it. 
 Through the monthly challenges, I want to boot myself up. I've been stale for the last few years.
@@ -30,7 +30,7 @@ In this way, the divergence, or the isolation, of my personal interest from the 
 
 ## Being Stubborn rather than Dying
 
-The concern of my obsolescence will be real. As I mentioned though, I see more serious threats; Declining passion and polluting inertia. I have to address it first, try to start acting, shuffle myself up, for taking my passion, curiosity and confidence back.
+The concern of my obsolescence is likely to be real. As I mentioned though, I'm seeing more serious threats; Declining passion and polluting inertia. I have to address it first, try to start acting, shuffle myself up, to take my passion, curiosity and confidence back.
 
 Once I recover some momentum, it might become possible to fight against the original problem. But the scene isn't in my sight. It's too dark. I need fuel to light a lantern. That's what my 2014 resolutions are for. Through the year, I'd play with things that excite me, regardless of if it's hot or not. I won't care if a technology is in demand. I'll just follow my appetite.
 
@@ -42,7 +42,7 @@ OK, this comes so long. Now I got encouraged by myself. Let's talk about the fir
 
 Why [Go](http://golang.org/)? No particular reason. It looks cool, and it can be my C++ replacement in server programming. Another candidate was playing with [Rust](http://www.rust-lang.org/). But I picked Go for this time as Rust doesn't seem ready yet. I leave it for another challenge. 
 
-I know Java is the dominant programming language for distributed programming where Go shines. So why not Java? Because Java isn't new for me thus doesn't excite me. Go is much younger and is niche, but already made some notable successes like [Docker](https://www.docker.io/) and [etcd](https://github.com/coreos/etcd). It's thrilling. My outsider's impression is that it can be Ruby for backend servers. I'd like to see how it actually is.
+I know Java is the dominant programming language for distributed computing where Go shines. So why not Java? Because Java isn't new for me thus doesn't excite me. Go is much younger and is niche, but already made some notable successes like [Docker](https://www.docker.io/) and [etcd](https://github.com/coreos/etcd). It's thrilling. My outsider's impression is that it can be Ruby for backend servers. I'd like to see how it actually is.
 
 Having said that, I won't write any real server at this time. As a beginner, I'll play like so.
 I'll build [a toy CLI tool](https://github.com/omo/fuga).
